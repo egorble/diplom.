@@ -11,10 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import dj-database-url
 
-db_from_env = dj-database-url.config()
-DATABASE['default'].update(db_from_env)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECRET_KEY = 'lm@6f4crv9h9ioa-0deh*pe%*1u6#__tqpzp2g1qo2kw2iyzhn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
