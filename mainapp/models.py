@@ -206,5 +206,3 @@ class Slider(models.Model):
     img3 = models.ImageField(default=1)
 
 
-class Basketico(models.Model):
-    img = models.ImageField()

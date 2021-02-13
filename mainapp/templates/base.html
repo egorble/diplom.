@@ -35,7 +35,7 @@
     <div class="container">
       <a class="navbar-brand" href="{% url 'base' %}">Shop</a>
 
-        <a class="nav-link" href="{% url 'cart' %}"><img class="imgico" src="https://w7.pngwing.com/pngs/375/521/png-transparent-shopping-cart-computer-icons-shopping-bags-trolleys-online-shopping-shopping-cart-purple-blue-angle.png" alt="корзина"><span class="badge badge-pill badge-danger">{{ cart.products.count }}</span></a>
+        <a class="nav-link" href="{% url 'cart' %}">Корзина<span class="badge badge-pill badge-danger">{{ cart.products.count }}</span></a>
 
       </div>
   </nav>
